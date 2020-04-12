@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 w-100">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+>
+
+<link rel="stylesheet" href="style.css">
+<title>weatherapi by itseiji</title>
+</head>
+<body class="h-100 w-100">
+
+    <!-- HEADER -->
+    <header class="h-100 w-100">
+        <div class="headerBg h-100">
+            <div class="headerlogo mx-auto">
+                <img id="logo" src="images/logo.png" class="d-inline-block" alt="logo">
+            </div>
+            <h1 class=".headerTxt text-center">Get your local weather</h1>
+            <div class="headerInput mx-auto">
+                <div class="input-group">
+                    <input type="text" class="form-control mr-3" id="cityInput" aria-describedby="cityFinder" placeholder="Enter city">
+                    <span class="input-group-btn">
+                        <button id="inputBtn" type="button" class="btn btn-primary"><a href="#content">Find</a></button>
+                    </span>
+                </div>
+            </div>
+            <div class="slogan">
+                <p>Its's free!! XD</p>
+            </div>
+        </div>
+
+    </header>
+    <!-- END HEADER -->
+
+    <!-- CONTENT -->
+    <div id="content" class="h-100 w-100 pt-5">
+        <table id="outputtable" class="table table-bordered w-50 mx-auto">
+            <thead class="table-primary">
+                <tr>
+                    <th scope="col">City</th>
+                    <th scope="col">Country code</th>
+                    <th scope="col">Temperature</th>
+                    <th scope="col">Weather discription</th>
+                    <th scope="col">Weather icon</th>
+                </tr>
+            </thead>
+            <!-- <tbody>
+                <tr class="first">
+                    <th scope="row" class="city"></th>
+                    <td class="countrycode"></td>
+                    <td class="temperature"></td>
+                    <td class="discription"></td>
+                    <td class="wicon"></td>
+                </tr>
+            </tbody> -->
+          </table>
+    </div>
+    <!-- END CONTENT -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script src="jquery-3.5.0.min.js"></script>
+<script src="weatherapi.js"></script>
+</body>
+</html>
