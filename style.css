@@ -38,3 +38,49 @@ button a, button a:focus, button a:active, button a:hover {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 576px) {
+
+    .headerBg, #content {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .headerlogo {
+        width: 100%;
+    }
+    .headerlogo img {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 90%;
+    }
+    .input-group {
+        display: block;
+    }
+    .headerTxt {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    .headerTxt, .headerInput {
+        width: 100%;   
+    }
+    #cityInput {
+        margin: 0 auto 20px auto !important;
+        width: 75%;
+    }
+    #inputBtn {
+        width: 30%;
+    }
+
+    .slogan {
+        display: none;
+        visibility: hidden;
+    }
+
+
+    table {
+        width: 100% !important;
+        font-size: 3vw;
+    }
+
+}
