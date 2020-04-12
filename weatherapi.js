@@ -7,7 +7,7 @@ $(document).ready(function(){
         } 
         else {
             $.ajax({
-                url : "http://api.openweathermap.org/data/2.5/weather?q=" + inputCity + "&units=metric&lang=en&appid=f0c170410de0255297f9766be6b89684",
+                url : "https://api.openweathermap.org/data/2.5/weather?q=" + inputCity + "&units=metric&lang=en&appid=f0c170410de0255297f9766be6b89684",
                 success: function(data){
                     console.log("Load was performed.");
 
@@ -33,6 +33,7 @@ $(document).ready(function(){
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     console.log("Request failed: " + textStatus +": "+ errorThrown);
+                    alert("Couldn't load");
                 }
             });
         }
